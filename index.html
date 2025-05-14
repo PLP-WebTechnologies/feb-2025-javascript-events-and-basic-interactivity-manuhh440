@@ -25,34 +25,34 @@
 
     <section id="interactive-elements">
         <h2>2. Interactive Elements 🎮</h2>
-        <div id="colorChanger">
-            <button id="changeColorButton">Change My Color</button>
+        <div id="textOrColorChanger">
+            <button id="changeButton">Change Me</button>
         </div>
 
         <div id="imageGallery">
             <h3>Image Gallery</h3>
             <div id="gallery">
-                <img src="https://via.placeholder.com/150/FF0000" alt="Red Placeholder" data-index="0" class="active">
-                <img src="https://via.placeholder.com/150/00FF00" alt="Green Placeholder" data-index="1">
-                <img src="https://via.placeholder.com/150/0000FF" alt="Blue Placeholder" data-index="2">
+                <img src="https://via.placeholder.com/150/FF0000" alt="Red" data-index="0" class="active">
+                <img src="https://via.placeholder.com/150/00FF00" alt="Green" data-index="1">
+                <img src="https://via.placeholder.com/150/0000FF" alt="Blue" data-index="2">
             </div>
-            <button id="prevButton">Previous</button>
-            <button id="nextButton">Next</button>
+            <button id="prevImage">Previous</button>
+            <button id="nextImage">Next</button>
         </div>
 
         <div id="accordion">
             <h3>Accordion Content</h3>
             <div class="accordion-item">
-                <div class="accordion-header" data-target="content1">Section 1</div>
-                <div id="content1" class="accordion-content">This is the content of section 1.</div>
+                <div class="accordion-header" data-target="contentA">Section A</div>
+                <div id="contentA" class="accordion-content">Content for Section A.</div>
             </div>
             <div class="accordion-item">
-                <div class="accordion-header" data-target="content2">Section 2</div>
-                <div id="content2" class="accordion-content">Here's the information for section 2.</div>
+                <div class="accordion-header" data-target="contentB">Section B</div>
+                <div id="contentB" class="accordion-content">Content for Section B.</div>
             </div>
             <div class="accordion-item">
-                <div class="accordion-header" data-target="content3">Section 3</div>
-                <div id="content3" class="accordion-content">And finally, this is section 3's content.</div>
+                <div class="accordion-header" data-target="contentC">Section C</div>
+                <div id="contentC" class="accordion-content">Content for Section C.</div>
             </div>
         </div>
     </section>
@@ -61,18 +61,18 @@
         <h2>3. Form Validation 📋✅</h2>
         <form id="validationForm">
             <div>
-                <label for="name">Name (required):</label>
-                <input type="text" id="name" name="name" required>
+                <label for="fullName">Name (required):</label>
+                <input type="text" id="fullName" name="fullName" required>
                 <p class="error-message" id="nameError"></p>
             </div>
             <div>
-                <label for="email">Email (required):</label>
-                <input type="email" id="email" name="email" required>
+                <label for="emailAddress">Email (required):</label>
+                <input type="email" id="emailAddress" name="emailAddress" required>
                 <p class="error-message" id="emailError"></p>
             </div>
             <div>
-                <label for="password">Password (min 8 characters):</label>
-                <input type="password" id="password" name="password" required>
+                <label for="userPassword">Password (min 8 characters):</label>
+                <input type="password" id="userPassword" name="userPassword" required>
                 <p class="error-message" id="passwordError"></p>
             </div>
             <button type="submit">Submit</button>
